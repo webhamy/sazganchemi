@@ -1,0 +1,324 @@
+header{
+    height:115px;
+    width: 100%;
+    background: #00bdbb;
+}
+header #header{
+    margin: 0 auto;
+    position:relative;
+    width: 1200px;
+    height: 115px;
+    background: rgba(12, 6, 40, 0);
+}
+/*logo*/
+#logo {
+    display: block;
+    padding: 0px 30px;
+    float: right;
+    /*margin-top: 15px;*/
+}
+#logo>a{
+  width: 100px;
+  height: 100px;
+  display:block;
+  background:red;
+}
+#logo>img{
+    /*width: 143px;*/
+    height: 100px;
+}
+/*search*/
+
+.form-search {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+.form-input{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+box-sizing: border-box;
+padding: 6px;
+width: 30px;
+height: 40px;
+border-radius: 50%;
+color: rgb(0, 101, 100);
+text-align: center;
+font-size: 1.2em;
+transition: all 1s;
+}
+
+.form-search:hover{
+    width: 200px;
+    cursor: pointer;
+}
+
+.form-search:hover input{
+    display: block;
+}
+
+.form-search:hover .fa{
+    background:rgb(0, 101, 100);
+    color: white;
+    float: left;
+height: 35px;
+width: 35px;
+}
+
+/*nav*/
+#nav{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    width: 100%;
+    height: 39px;
+    background: #fff;
+
+}
+.toggle,
+[id^=drop] {
+    display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav {
+    width: 1198px;
+    height: 35px;
+    margin:0 auto;
+    padding: 0;
+    background-color:#fff;
+}
+
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+    float: right;
+    height: 100%;
+    padding: 0;
+    margin:0;
+    list-style: none;
+}
+
+/* Positioning the navigation items inline */
+nav ul li {
+    width:calc(1198px /5);
+    margin: 0px;
+    display:inline-block;
+    float: right;
+    background-color: #fff;
+
+}
+
+/* Styling the links */
+nav >ul>li>a{
+    text-align: center;}
+nav a {
+    font-family: yekan;
+    display: block;
+    /*padding:14px 20px;*/
+    padding: 7.5px 20px;
+    box-sizing: border-box;
+    color:rgb(0, 101, 100)!important;
+    font-size: .9em;
+    text-decoration: none;
+}
+
+/* nav ul li ul li:hover { background: #000000; } */
+
+/* Background color change on Hover */
+nav a:hover {
+    background-color: rgb(0, 189, 187);
+    color: white !important;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+    display: none;
+    /* has to be the same number as the "line-height" of "nav a" */
+    top: 30px;
+}
+nav ul ul a{
+    font-size:.8em;
+}
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+    display:inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+    width: calc(1198px /5);
+    float:none;
+    display:list-item;
+    position: relative;
+}
+
+/* Second, Third and more Tiers
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+    position: relative;
+    top:-60px;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+    left:170px;
+}
+
+
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+/* Media Queries
+--------------------------------------------- */
+@media all and (max-width : 1200px) {
+    header #header,nav {
+        width: unset;
+      }
+
+    .sazcont {
+        width: 100%!important;}
+    }
+@media all and (max-width : 1199px) {
+    header #header {
+        width: unset;}
+    nav {
+        margin: 0;
+        width: unset;
+    }
+    nav{
+      position:absolute;
+    }
+    nav >ul>li>a{
+        text-align: inherit;}
+
+
+    /* Hide the navigation menu by default */
+    /* Also hide the  */
+    .toggle + a,
+    .menu {
+        display: none;
+    }
+
+    /* Stylinf the toggle lable */
+    .toggle {
+        display: block;
+        height: 39px;
+        padding:8px 20px;
+        color:rgba(12, 6, 40, 0.83);
+        font-size:.9em;
+        text-decoration:none;
+        border:none;
+    }
+
+    .toggle:hover:not(:first-child) {
+        background-color: #fff;
+        color:#fff;
+    }
+
+    /* Display Dropdown when clicked on Parent Lable */
+    [id^=drop]:checked + ul {
+        display: block;
+    }
+
+    /* Change menu item's width to 100% */
+    nav ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul .toggle,
+    nav ul ul a {
+        padding: 0 40px;
+    }
+
+    nav ul ul ul a {
+        padding: 0 80px;
+    }
+
+    nav a:hover,
+    nav ul ul ul a {
+        background-color: #fff;
+        color:rgba(12, 6, 40, 0.83);
+    }
+
+    nav ul li ul li .toggle,
+    nav ul ul a,
+    nav ul ul ul a{
+        padding:14px 20px;
+        color:#fff;
+        font-size:.9em;
+    }
+
+
+    nav ul li ul li .toggle,
+    nav ul ul a {
+        background-color: #fff;
+    }
+
+    /* Hide Dropdowns by Default */
+    nav ul ul {
+        float: none;
+        position:static;
+        color: #ffffff;
+        /* has to be the same number as the "line-height" of "nav a" */
+    }
+
+    /* Hide menus on hover */
+    nav ul ul li:hover > ul,
+    nav ul li:hover > ul {
+        display: none;
+    }
+
+    /* Fisrt Tier Dropdown */
+    nav ul ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul ul li {
+        position: static;
+        /* has to be the same number as the "width" of "nav ul ul li" */
+
+    }
+
+}
+
+@media all and (max-width : 330px) {
+
+    nav ul li {
+        display:block;
+    }
+
+}

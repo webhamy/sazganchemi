@@ -1,0 +1,149 @@
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #4dbd74;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #4dbd74;
+}
+/* #cont{
+    width: 90%;
+    position: absolute;
+    left: 3.5vw;
+} */
+#cont>.menutop,#cont>.menutop a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px
+}
+#cont>.menutop li{
+  width: calc(100% - 5)
+}
+#cont>div {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    background: #dedcdc26;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+#cont>div>div{
+    width: 23.75%;
+    margin: 1% 1% 1% 0;
+    float: right;
+    background-color: #faf8ff;
+    color: #23282c;
+    font-size: 17px;
+    padding: 1% ;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+}
+#cont>div>div>img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+#cont>div>div>span{
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+#cont>div>div>a{
+    margin: 5px auto 0 auto;
+    display: block;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+#cont>div>div>label{
+    margin: 5px auto 0 auto;
+    display: block;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    background-color: #20a8d8;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    padding: 5px
+
+}
+#cont>div>div>input[type=checkbox]{
+    display: none;
+}
+#cont>div>div>input[type=checkbox]:checked+div{
+    display: block;
+}
+#cont>div>div>.detail{
+    width: 100%;
+    min-height: 315px;
+    padding: 8px;
+    box-sizing: border-box;
+    display: none;
+    font-size: .8em;
+    text-align: justify;
+    top: 0;
+    left: 0;
+    background-color: rgba(47, 54, 59, 0.88);
+    position: absolute;
+    border-radius: 10px;
+    color: white;
+    border: 5px white solid;
+}
+#cont>div>div>.detail>ul{
+    list-style: none;
+    height: 290px;
+    overflow-y: scroll;
+    padding: 0 2px 0 8px;
+}
+.detail>ul>li>span{
+    color:#81deff; ;
+}
+@media all and (max-width: 900px){
+    /* #cont{
+        width: 80%;
+        left: 7.5vw;
+    } */
+    #cont>div>div{
+        width: 48.5%;
+        margin: 5% 1% 0 0;
+    }
+}
+@media all and (max-width: 640px){
+    /* #cont{
+        width: 70%;
+        left: 11vw;
+    } */
+    #cont>div>div{
+        width: 98%;
+        margin: 7% 1% 0 1%;
+    }
+}
+@media all and (max-width: 350px) {
+
+    /* #cont {
+        width: 70%;
+        left: 8vw;
+    } */
+    #cont>div>div{
+        width: 98%;
+        margin: 7% 1% 0 1%;
+    }
+}

@@ -1,0 +1,108 @@
+#accordion {
+    width: 99%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    /*background-color: rgba(99, 99, 99, 0.78);*/
+    border-radius: 20px;
+    color: #fff;
+    margin: 5px auto;
+}
+
+#accordion > label {
+    display: block;
+    width: 100%;
+    background-color: #189eb8;
+    margin: 25px auto 0 auto;
+    font-size: 15px;
+    border-radius: 5px;
+   min-height: 30px;
+}
+#accordion > label>span:nth-child(1){
+    display: inline-block;
+    float: right;
+    width: 65%;
+    height: 30px;
+    line-height: 20px;
+    padding: 5px;
+}
+#accordion > label>span:nth-child(2){
+    display: inline-block;
+    float: right;
+    width: 35%;
+    height: 30px;
+    line-height: 20px;
+    padding: 5px;
+}
+#accordion > label>span:nth-child(2){
+    text-align: left;
+}
+#accordion > input[type=checkbox] {
+    display: none
+}
+
+#accordion > div {
+
+    width: 100%;
+    height: 0;
+    margin: 3px auto 0 auto;
+    /*background-color: #e0d218;*/
+    overflow: hidden;
+}
+
+#accordion > div > div {
+    width: 100%;
+    height:auto ;
+    background-color: rgba(255, 255, 255, 0.94);
+    color: #2f353a;
+    font-size: 15px;
+    text-align: justify;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+#accordion > div > div > div:nth-child(1) {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -25px;
+    right: 50%;
+    background-color: #2f353a;
+    transform: rotate(45deg);
+}
+
+#accordion > div > div >a>i {
+    float: left;
+position: relative;
+    left: 5px;
+    bottom: 25px;
+    color: black;
+    font-size: 20px;
+}
+#accordion > div > div > div:nth-child(3) {
+    width: 100%;
+    height: auto;
+    /*background-color: #cb1b03;*/
+    padding: 5px;
+}
+#accordion > input[type=checkbox]:checked + div {
+    height: auto;
+}
+@media all and (max-width: 500px){
+
+    #accordion > label {
+        font-size: 12px;
+        height: 50px
+    }
+    #accordion {
+        width: 90%;
+        left: 47%;
+    }
+}
+@media all and (max-width: 350px){
+    #accordion {
+        width: 80%;
+        left: 47%;
+    }
+}

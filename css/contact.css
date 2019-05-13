@@ -1,0 +1,133 @@
+.contact_row{
+  height:210px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 70px auto;
+  text-align:center;
+}
+
+.contact_row>.contact_column{
+  width:50%;
+  height:100%;
+  float:right;
+}
+
+.shadow{
+  box-shadow: 0px 0px 61px -26px #000;
+}
+.contact_row .icon{
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 34px;
+  text-rendering: auto;
+}
+.contact_row .icon_item_contact{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #00716f;
+  font-size: 40px;
+  color: #fff;
+  padding: 10px;
+  margin: -97px 0 10px;
+  border: 3px solid #fff;
+  box-shadow: 0px 0px 0px 1px #eee;
+}
+.contact_row .tit_item_contact{
+  font-size: 17px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.second_contact_row>div:last-child{
+  line-height:38px;
+}
+/*****form*****/
+.last_contact_row {
+    height: 750px;
+}
+.contact_row .comment{
+  width: 100%;
+  height: 630px;
+  margin:0 auto;
+}
+
+.contact_row .comment>form,.contact_row .comment>.about_us{
+  width: 100%;
+  height: 630px;
+  padding:10px 35px;
+  box-sizing:border-box;
+  /*float:right;*/
+    margin: 0 auto;
+}
+.contact_row .comment>.about_us{
+    text-align:justify;
+    line-height: 38px;
+    font-size: 1em;
+
+}
+.contact_row .comment h4{
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  background-color:#00bdbb;
+  text-align: center;
+  line-height: 45px;
+  color: white;
+  margin-bottom: 18px;
+}
+.contact_row .comment>form>div{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 30px;
+}
+.contact_row .comment>form>div>input{
+  color: black;
+}
+
+.contact_row .comment>form>div>input[type=text]{
+    width: 100%;
+    height:100%;
+    float: right;
+    display: block;
+    font-size: .8em;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border: 1px rgb(0, 113, 111) solid;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+}
+.contact_row .comment>form>h4{
+  margin-bottom:30px;
+}
+.contact_row .comment>form>div:nth-child(7)>input{
+    width: 100%;
+    height: 35px;
+    font-size: .9em;
+    /*margin-right: 20%;*/
+    background-color:rgb(4, 159, 156);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.contact_row .comment>form>div:nth-child(6)>input{
+    width: 100%;
+    height: 150px;
+}
+.contact_row .comment>form>div>div{
+    width: 100%;
+    border-radius: 2px;
+    height: 30px;
+    float: right;
+    color: #bc0022;
+    /* margin: 5px 0; */
+    font-size: .8em;
+}

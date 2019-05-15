@@ -2,7 +2,7 @@
 <header>
     <div id="header">
         <div id="logo">
-            <img src="<?php echo base_url()?>/css/images/newlogo.png">
+            <img src="<?php echo base_url()?>css/images/newlogo2.png">
         </div>
         <form  class=form-search method="post">
             <i class="fa fa-search"></i>

@@ -24,7 +24,7 @@ if (!session_id()) session_start();
 |
 */
 // $config['base_url'] = 'http://www.sazganchemi.com/newversion';
- $config['base_url'] = 'http://localhost/sazganchem/';
+ $config['base_url'] = 'http://localhost/sazganchemGit/';
 
 /*
 |--------------------------------------------------------------------------
